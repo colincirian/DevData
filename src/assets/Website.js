@@ -7,7 +7,7 @@ import Navbar from "../pages/Navbar";
 import App from "../assets/App";
 import Login from "../pages/Login";
 import SignOut from "../pages/SignOut";
-import ProjectIdeas from "../pages/Projects";
+import Projects from "../pages/Projects";
 
 
 function Website() {
@@ -26,7 +26,7 @@ function Website() {
             <Route path="/account" element={<Account />} />
             <Route path="/avatar" element={<Avatar />} />
             <Route path="/signout" element={<SignOut />} />
-            <Route path="/projects" element={<ProjectIdeas />} />
+            <Route path="/projects" element={<Projects />} />
           </Routes>
         </main>
       </BrowserRouter>

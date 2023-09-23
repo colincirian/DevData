@@ -16,7 +16,6 @@ function SignOut() {
   useEffect(() => {
     async function getUserData() {
       await supabase.auth.getUser().then((value) => {
-        // Value.data.user
         if (value.data?.user) {
           console.log(value.data.user);
           setUser(value.data.user);

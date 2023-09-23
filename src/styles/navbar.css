@@ -45,3 +45,9 @@
 .nav-item {
   margin-left: 10px; 
 }
+
+.logo {
+  width: 200px;
+  height: 200px;
+  margin-top: -60px;
+}
