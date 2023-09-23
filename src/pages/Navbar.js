@@ -42,6 +42,11 @@ function Navbar() {
         <div className="collapse navbar-collapse" id="navbarNav">
           <div className="centered-nav-items">
             <ul className="navbar-nav">
+            <li className="nav-item">
+                <Link to={"/account"}>
+                  <button className="link-btn">Account</button>
+                </Link>
+              </li>
               <li className="nav-item">
                 <Link to={"/login"}>
                   <button className="link-btn">Login</button>
