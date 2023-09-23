@@ -1,0 +1,14 @@
+.signout-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh; 
+    padding: 20px;
+  }
+  
+  .signout-div {
+    text-align: center; 
+  }
+  
+
+  

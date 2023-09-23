@@ -1,0 +1,18 @@
+h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+body {
+    background: linear-gradient(to bottom, #1a0907, #17369d);
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    color: #333; /* Text color */
+  }
+  
