@@ -25,8 +25,16 @@ function Home() {
         <div className="home-container">
             <header className="home-header">
             <h1>Welcome to DevData</h1>
+            <h2>Document your success, failures, and future project plans.</h2>
+            <h1>Start your coding career!</h1>
+            <div className="top-div"></div>
+            <h4>Coding resources:</h4>
+            <div className="div-container">
+                <div className="div-boxes"></div>
+                <div className="div-boxes"></div>
+                <div className="div-boxes"></div>
+            </div>
             </header>
-            <Projects />
         </div>
     )
 }

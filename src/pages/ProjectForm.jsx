@@ -32,8 +32,7 @@ export function ProjectForm({ onSubmit }) {
   return (
     <form onSubmit={handleSubmit} className="new-item-form">
       <div className="form-row">
-        <h1>Log Your Ideas</h1>
-        <label htmlFor="item">New Ideas</label>
+        <h1>Future Project Ideas</h1>
         <input
           value={newItem}
           onChange={e => setNewItem(e.target.value)}
