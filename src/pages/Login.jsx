@@ -8,6 +8,7 @@ import "../styles/login.css";
 function Login() {
     const navigate = useNavigate();
 
+    useEffect(() => {
       supabase.auth.onAuthStateChange(async (authState) => {
         if (authState === "SIGNED_IN") {
           // User is signed in, navigate to the home page
@@ -17,6 +18,7 @@ function Login() {
           navigate('/login');
         }
       });
+    })
 
   return (
     <div className="App">

@@ -7,55 +7,64 @@ export default function Account({ session }) {
   const [username, setUsername] = useState(null);
   const [website, setWebsite] = useState(null);
   const [avatar_url, setAvatarUrl] = useState(null);
-  const [user, setUser] = useState(null);
 
   useEffect(() => {
-    async function getProfile() {
-      setLoading(true);
-      const { user } = session;
+    if (session) {
+      async function getProfile() {
+        setLoading(true);
+        const { user } = session;
 
-      let { data, error } = await supabase
-        .from("profiles")
-        .select(`username, website, avatar_url`)
-        .eq("id", user.id)
-        .single();
+        let { data, error } = await supabase
+          .from("profiles")
+          .select(`username, website, avatar_url`)
+          .eq("id", user.id)
+          .single();
 
-      if (error) {
-        console.warn(error);
-      } else if (data) {
-        setUsername(data.username);
-        setWebsite(data.website);
-        setAvatarUrl(data.avatar_url);
+        if (error) {
+          console.warn(error);
+        } else if (data) {
+          setUsername(data.username);
+          setWebsite(data.website);
+          setAvatarUrl(data.avatar_url);
+        }
+
+        setLoading(false);
       }
 
-      setLoading(false);
+      getProfile();
     }
-
-    getProfile();
   }, [session]);
 
   async function updateProfile(event, avatarUrl) {
     event.preventDefault();
 
     setLoading(true);
-    const { user } = session;
 
-    const updates = {
-      id: user.id,
-      username,
-      website,
-      avatarUrl,
-      updated_at: new Date(),
-    };
+    if (session) {
+      const { user } = session;
 
-    let { error } = await supabase.from("profiles").upsert(updates);
+      const updates = {
+        id: user.id,
+        username,
+        website,
+        avatarUrl,
+        updated_at: new Date(),
+      };
 
-    if (error) {
-      alert(error.message);
-    } else {
-      setAvatarUrl(avatarUrl);
+      let { error } = await supabase.from("profiles").upsert(updates);
+
+      if (error) {
+        alert(error.message);
+      } else {
+        setAvatarUrl(avatarUrl);
+      }
     }
+
     setLoading(false);
+  }
+
+  if (!session) {
+    return <div>Loading...</div>
   }
 
   return (

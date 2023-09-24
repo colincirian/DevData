@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { createClient } from "@supabase/supabase-js";
-import { Auth } from "@supabase/auth-ui-react";
 import "../styles/signout.css";
 
 const supabase = createClient(
@@ -42,7 +41,7 @@ function SignOut() {
         <div className="signout-div">
           {Object.keys(user).length !== 0 ? (
             <>
-              <h1> Success </h1>
+              <h1> Successfully signed out </h1>
               <button onClick={() => signOutUser()}>Sign Out</button>
             </>
           ) : (

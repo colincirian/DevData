@@ -32,7 +32,7 @@ export function ProjectForm({ onSubmit }) {
   return (
     <form onSubmit={handleSubmit} className="new-item-form">
       <div className="form-row">
-        <h1>Project Ideas</h1>
+        <h1>Log Your Ideas</h1>
         <label htmlFor="item">New Ideas</label>
         <input
           value={newItem}
@@ -41,7 +41,7 @@ export function ProjectForm({ onSubmit }) {
           id="item"
         />
       </div>
-      <button className="btn">Add</button>
+      <button className="print-btn">Print Idea</button>
     </form>
   )
 }
