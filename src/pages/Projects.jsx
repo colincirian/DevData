@@ -1,13 +1,8 @@
 import React, { useState, useEffect } from "react";
-import { createClient } from "@supabase/supabase-js";
-import "../styles/projects.css";
+import { supabase } from "../backend/supabaseClient";
 import { ProjectForm } from "./ProjectForm"
 import { ProjectList } from "./ProjectList"
-
-const supabase = createClient(
-  "https://uhgaoewcubwznwzxakfe.supabase.co",
-  "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InVoZ2FvZXdjdWJ3em53enhha2ZlIiwicm9sZSI6ImFub24iLCJpYXQiOjE2OTUzMzQ5NDcsImV4cCI6MjAxMDkxMDk0N30.F8d7dCOvsXGuKbsQSldL04thG1upSYU0z4pCpOGxqho"
-);
+import "../styles/projects.css";
 
 const createProject = async (
   taskDescription,
