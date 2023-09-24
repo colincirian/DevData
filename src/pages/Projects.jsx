@@ -81,9 +81,9 @@ export default function Projects() {
   }
 
   return (
-    <>
+    <div className="project-form">
       <ProjectForm onSubmit={addTodo} />
       <ProjectList todos={todos} toggleTodo={toggleTodo} deleteTodo={deleteTodo} />
-    </>
+    </div>
   )
 }

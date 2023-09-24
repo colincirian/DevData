@@ -3,6 +3,7 @@ import { supabase } from "../backend/supabaseClient";
 import { Auth } from "@supabase/auth-ui-react";
 import Projects from "./Projects";
 import "../styles/home.css";
+import codeImg from "../images/coding.png";
 
 function Home() {
 
@@ -26,11 +27,12 @@ function Home() {
             <header className="home-header">
             <h1>Welcome to DevData</h1>
             <h2>Document your success, failures, and future project plans.</h2>
-            <h1>Start your coding career!</h1>
-            <div className="top-div"></div>
+            <div className="top-div">
+            </div>
             <h4>Coding resources:</h4>
             <div className="div-container">
-                <div className="div-boxes"></div>
+                <div className="div-boxes">
+                </div>
                 <div className="div-boxes"></div>
                 <div className="div-boxes"></div>
             </div>

@@ -3,18 +3,13 @@
     box-sizing: border-box;
   }
   
-  body {
-    background: white;
-    color: hsl(200, 100%, 90%);
-    padding: 1rem;
-    margin: 0 auto;
-  }
-  
   .new-item-form {
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
     width: 500px;
+    justify-content: center;
+    margin: auto;
   }
   
   .form-row {
@@ -50,11 +45,11 @@
     background: white;
     border-radius: 0.25em;
     padding: 0.25em 0.5em;
-    color: hsl(200, 100%, 90%);
+    color: black;
   }
   
   .new-item-form input:focus {
-    border: 1px solid hsl(200, 100%, 70%);
+    border: 1px solid black;
   }
   
   .header {
@@ -71,7 +66,7 @@
   }
   
   .list li:has(input:checked) label {
-    color: hsl(200, 20%, 40%);
+    color: white;
   }
   
   .list {
@@ -94,7 +89,7 @@
   }
   
   .list li:has(input:focus-visible) label {
-    outline: 1px solid hsl(200, 100%, 50%);
+    outline: 1px solid black;
   }
   
   .list li input {
@@ -104,6 +99,8 @@
     appearance: none;
     pointer-events: none;
     position: absolute;
+    justify-content: center;
+    margin: auto;
   }
   
   .list li label::before {
@@ -125,7 +122,7 @@
   .list li:has(input:checked) label::before {
     content: "✔";
     background: hsl(200, 100%, 40%);
-    color: hsl(200, 100%, 90%);
+    color: white;
     font-size: 0.75rem;
     font-weight: bold;
   }
