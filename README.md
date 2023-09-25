@@ -10,6 +10,9 @@ Post MVP Plans
 Authors
 
 # Usage and Features
+Home: 
+The home page includes three important resources any developer may find useful!
+
 Project Ideas:
 Click on the "Projects" tab inside the navbar to get started. There you can utilize the feature that allows you to add project ideas, tasks, or things to do.
 
@@ -27,6 +30,8 @@ https://chat.openai.com/
 https://www.w3schools.com/
 https://getbootstrap.com/docs/5.3/getting-started/introduction/
 https://www.youtube.com/
+https://www.htmlcsscolor.com/
+https://supabase.com/docs/guides/getting-started/tutorials/with-react
 
 # Built With
 https://supabase.com/
@@ -44,3 +49,4 @@ Create a function that saves the data to a local storage.
 Connect the frontend to the database successfully.
 Add a feature that allows the developer to edit their project ideas.
 Create a page where a developer can log any interview questions that were difficult.
+Learn how to use the backend more.

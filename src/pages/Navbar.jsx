@@ -2,10 +2,9 @@ import React from "react";
 import { useNavigate, Link } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min";
-import { supabase } from "../backend/supabaseClient";
 import devdataImage from "../images/devdata.png";
+import 'font-awesome/css/font-awesome.min.css';
 import "../styles/navbar.css";
-import Projects from "./Projects";
 
 function Navbar() {
   const navigate = useNavigate();
