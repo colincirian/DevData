@@ -2,6 +2,7 @@ h1 {
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 10px;
 }
 
 h2 {
@@ -15,25 +16,25 @@ body {
     background: linear-gradient(to bottom, rgb(28, 0, 70), #1a0907);
 }
   
-.top-div {
-  width: 70%;
-  height: 250px;
+.background-div {
+  width: 90vw;
+  height: 80vh;
   background-color: white;
   margin: auto;
-  border-radius: 10px;
+  border-radius: 20px;
+  background: linear-gradient(to bottom, #5631B4, black);
+  position: relative;
 }
 
 .div-container {
   display: flex;
-  margin: 20px;
+  margin: 10px;
   justify-content: center;
 }
 
-.div-boxes {
-  width: 400px;
-  height: 240px;
-  background-color: white;
-  padding: 20px;
-  margin: 20px;
+.resources-div {
+  width: 340px;
+  height: 260px;
+  margin: 13px;
   border-radius: 10px;
 }

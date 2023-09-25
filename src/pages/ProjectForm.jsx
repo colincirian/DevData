@@ -1,7 +1,7 @@
-import { useState } from "react";
-import { supabase } from "../backend/supabaseClient";
+import React, { useState } from "react";
 
 export function ProjectForm({ onSubmit }) {
+
   const [newItem, setNewItem] = useState("");
 
   function handleSubmit(e) {
@@ -11,22 +11,6 @@ export function ProjectForm({ onSubmit }) {
     onSubmit(newItem);
 
     setNewItem("");
-  }
-
-  async function insertProject() {
-    try {
-      const { data, error } = await supabase
-        .from("projects")
-        .insert([{ id: 1, name: "Denmark" }]);
-
-      if (error) {
-        console.error("Error inserting data:", error);
-      } else {
-        console.log("Data inserted successfully:", data);
-      }
-    } catch (error) {
-      console.error("An error occurred:", error);
-    }
   }
 
   return (
@@ -44,3 +28,21 @@ export function ProjectForm({ onSubmit }) {
       </form>
   );
 }
+
+  // database functin that I couldn't figure out
+
+  // async function insertProject() {
+  //   try {
+  //     const { data, error } = await supabase
+  //       .from("projects")
+  //       .insert([{ id: 1, name: "Denmark" }]);
+
+  //     if (error) {
+  //       console.error("Error inserting data:", error);
+  //     } else {
+  //       console.log("Data inserted successfully:", data);
+  //     }
+  //   } catch (error) {
+  //     console.error("An error occurred:", error);
+  //   }
+  // }

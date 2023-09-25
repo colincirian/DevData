@@ -23,23 +23,7 @@ const localizer = dateFnsLocalizer({
 });
 
 const events = [
-    {
-        title: "Interview",
-        allDay: true,
-        start: new Date(2023, 6, 0),
-        end: new Date(2023, 6, 0)
-    },
-    {
-        title: "Learn C++",
-        allDay: true,
-        start: new Date(2023, 6, 0),
-        end: new Date(2023, 6, 0)
-    },
-    {
-        title: "Vacation",
-        start: new Date(2023, 3, 1),
-        end: new Date(2023, 6, 0)
-    }
+    {}
 ]
 
 function Events() {

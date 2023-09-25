@@ -73,12 +73,15 @@
     display: flex;
     flex-direction: column;
     gap: 0.3rem;
+    align-items: center;
   }
   
   .list li {
     display: flex;
     gap: 0.5rem;
     align-items: center;
+    margin: auto;
+    padding: 10px;
   }
   
   .list li label {
@@ -108,7 +111,7 @@
     display: block;
     width: 0.9rem;
     height: 0.9rem;
-    background: hsl(200, 100%, 90%);
+    background-color: white;
     border-radius: 0.25em;
     display: flex;
     justify-content: center;
@@ -116,17 +119,18 @@
   }
   
   .list li label:hover::before {
-    background: hsl(200, 100%, 80%);
+    background: white;
   }
   
   .list li:has(input:checked) label::before {
     content: "✔";
-    background: hsl(200, 100%, 40%);
-    color: white;
+    color: green;
     font-size: 0.75rem;
     font-weight: bold;
+    width: 20px;
+    height: 20px;
   }
   
-  .list li:has(input:checked) label:hover::before {
-    background: hsl(200, 100%, 30%);
-  }
+  input[type="checkbox"] {
+    display: none;
+  } 
