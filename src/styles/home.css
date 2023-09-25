@@ -13,7 +13,7 @@ h2 {
 }
 
 body {
-    background: linear-gradient(to bottom, rgb(28, 0, 70), #1a0907);
+    background: linear-gradient(to bottom, black, #05065C);
 }
   
 .background-div {
@@ -22,7 +22,7 @@ body {
   background-color: white;
   margin: auto;
   border-radius: 20px;
-  background: linear-gradient(to bottom, #5631B4, black);
+  background: linear-gradient(to bottom, #05065C, black);
   position: relative;
 }
 

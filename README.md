@@ -16,6 +16,9 @@ Click on the "Projects" tab inside the navbar to get started. There you can util
 Calendar:
 Access the "Calendar" feature to schedule upcoming interviews, meetings, and deadlines.
 
+Login, Sign Up and Sign Out: 
+Developers can log in using their github or discord through a 3rd party authentication. They may also sign up or sign in just by using their own email and password. When the user is finish they may also sign out of their account by pressing the "sign out" button in the navbar.
+
 # Configuration and Customization
 User customization options include adding and removing any project ideas or upcoming events planned.
 
